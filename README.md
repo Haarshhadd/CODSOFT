@@ -35,11 +35,11 @@ This project is part of an internship at CODESOFT.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Haarshhadd/CODSOFT/tree/Task_2-(Tic-Tac-Toe-AI)
+    git clone https://github.com/Haarshhadd/CODSOFT/tree/Task_2-(Tic-Tac-Toe-AI)/Game_Code
     ```
 2. Navigate to the project directory:
     ```bash
-    cd Task_2-(Tic-Tac-Toe-AI)
+    cd Game_Code
     ```
 3. Open the `index.html` file in your preferred web browser to start the game.
 
