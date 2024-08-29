@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header{
+    text-align: center;
+    background-color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer{
+    text-align: center;
+    color: #38393a;
+    font-size:65%;
+    background-color: #ccc;
+}
+
+.chat-container {
+    height: 80%;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    height: 400px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: calc(100% - 40px); /* Ensure the chatbox fills the remaining space */
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;
+}
+
+.chatbox::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.message {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    display: block;  /* Ensure messages are block elements */
+    clear: both;     /* Clear floats */
+}
+
+.bot-message {
+    background-color: #e1ffc7;
+    float: left;    /* Float to the right for bot messages */
+    text-align: left;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #c7d7ff;
+    float: right;     /* Float to the left for user messages */
+    text-align: right;
+    max-width: 70%;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+     
+}
+
+.chat-input {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+}
+
+.send-button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 1px solid #ccc;
+    
+}
+
+.send-button:hover {
+    background-color: #45a049;
+}
+
+/* Prevent text from resizing when the screen size changes */
+@media screen and (max-width: 550px) {
+    .chat-container {
+        width: 450px;
+    }
+
+    .chat-input {
+        font-size: 16px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+}
+
